@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Image Converter - Convert images between various formats, resize, change DPI, and more.">
+    <meta name="keywords" content="image converter, resize image, change DPI, convert to JPEG, convert to PNG, online image tool">
+    <meta name="author" content="Your Name or Your Website Name">
+    <title>Image Converter - Convert, Resize, Change DPI Online</title>
+
+    <!-- Open Graph meta tags (for social media sharing) -->
+    <meta property="og:title" content="Image Converter - Convert, Resize, Change DPI Online">
+    <meta property="og:description" content="Online Image Converter - Convert images between various formats, resize, change DPI, and more.">
+    <meta property="og:image" content="URL_to_your_image_thumbnail.jpg">
+    <meta property="og:url" content="URL_of_your_website">
+    
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="indian-vibe">Image Converter</h1>
+        <form method="POST" action="/convert" enctype="multipart/form-data">
+            <label for="file">Upload Image:</label>
+            <input type="file" id="file" name="file" required>
+
+            <label for="action">Select Action:</label>
+            <select id="action" name="action" required>
+                <option value="convert_format">Convert Format</option>
+                <option value="resize">Resize</option>
+                <option value="change_dpi">Change DPI</option>
+                <option value="greyscale">Convert to Greyscale</option>
+            </select>
+
+            <div id="resize-options">
+                <label for="width">Width:</label>
+                <input type="number" id="width" name="width" min="1" placeholder="e.g., 800">
+
+                <label for="height">Height:</label>
+                <input type="number" id="height" name="height" min="1" placeholder="e.g., 600">
+            </div>
+
+            <div id="dpi-options">
+                <label for="dpi">DPI:</label>
+                <input type="number" id="dpi" name="dpi" min="1" placeholder="e.g., 200">
+            </div>
+
+            <label for="format">Output Format:</label>
+            <select id="format" name="format">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="jpg">JPG</option>
+                <option value="pdf">PDF</option>
+            </select>
+
+            <button type="submit" class="indian-button">Convert</button>
+        </form>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

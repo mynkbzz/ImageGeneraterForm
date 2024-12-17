@@ -1,0 +1,77 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Indian Flag-Themed Text */
+.indian-vibe {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #FF9933, white, #138808, white, #000080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flag-wave 3s infinite linear;
+}
+
+/* Animation for waving flag effect */
+@keyframes flag-wave {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Input and Label Styles */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #264653;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Button with Indian Theme */
+.indian-button {
+    background: linear-gradient(to right, #FF9933, white, #138808);
+    color: #000080;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.indian-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide/Show Fields */
+#resize-options, #dpi-options {
+    display: none;
+}
